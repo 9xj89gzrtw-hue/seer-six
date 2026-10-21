@@ -1,0 +1,35 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Futarchy · Seer</title><link rel="stylesheet" href="style.css"></head>
+<body><nav class="top wrap"><div class="brand"><span class="dot"></span>Seer</div>
+<div class="links"><a href="index.html" class="">Home</a><a href="app.html" class="">Seer app</a><a href="deep.html" class="">Deep</a><a href="futarchy.html" class="on">Futarchy</a><a href="opportunity-markets.html" class="">Opportunity Markets</a><a href="risk-pricing.html" class="">Risk Pricing</a></div><span class="badge">EF · Continuum</span></nav><main class="wrap">
+<h1>Decide with a measure, not a mood.</h1>
+<p class="lede">Futarchy uses conditional markets to forecast what a chosen measure of success would
+look like if a proposal passes and if it does not. That gives a DAO information to consider, instead
+of making the decision for it.</p>
+<div class="grid g2" style="margin-top:10px">
+  <div class="card">
+    <div class="klab">If it passes</div>
+    <h2 style="color:var(--good)">Treasury grows 18%</h2>
+    <canvas id="fpass" width="760" height="300"></canvas>
+  </div>
+  <div class="card">
+    <div class="klab">If it does not</div>
+    <h2 style="color:var(--bad)">Treasury shrinks 6%</h2>
+    <canvas id="ffail" width="760" height="300"></canvas>
+  </div>
+</div>
+<div class="card" style="margin-top:16px">
+  <table>
+    <thead><tr><th>Proposal</th><th>Measure</th><th class="r">P(pass)</th><th class="r">E[metric | pass]</th><th class="r">E[metric | fail]</th><th>Verdict</th></tr></thead>
+    <tbody>
+      <tr><td>Fund the grants round</td><td class="mono">treasury_12m</td><td class="r mono">0.64</td><td class="r mono">+18.2%</td><td class="r mono">-5.9%</td><td><span class="pill g">expected positive</span></td></tr>
+      <tr><td>Raise the protocol fee</td><td class="mono">rev_per_user</td><td class="r mono">0.41</td><td class="r mono">+31.0%</td><td class="r mono">-2.2%</td><td><span class="pill b">expected negative</span></td></tr>
+      <tr><td>Sunset the legacy market type</td><td class="mono">liquidity_6m</td><td class="r mono">0.77</td><td class="r mono">+9.4%</td><td class="r mono">-11.0%</td><td><span class="pill b">expected negative</span></td></tr>
+    </tbody></table>
+</div>
+<div class="rail"></div><div class="rail-labels"><span>one protocol</span><span>six interfaces</span><span>one continuous line</span></div></main>
+<footer class="foot wrap"><div>Seer design study — part of the <b>Continuum</b> system: one continuous
+accent line runs through all six interfaces so the protocol reads as one ecosystem.</div>
+<div class="tag">poidh #38 submission · Futarchy</div></footer>
+<script src="app.js"></script><script></script></body></html>

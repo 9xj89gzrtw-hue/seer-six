@@ -1,0 +1,36 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Risk Pricing · Seer</title><link rel="stylesheet" href="style.css"></head>
+<body><nav class="top wrap"><div class="brand"><span class="dot"></span>Seer</div>
+<div class="links"><a href="index.html" class="">Home</a><a href="app.html" class="">Seer app</a><a href="deep.html" class="">Deep</a><a href="futarchy.html" class="">Futarchy</a><a href="opportunity-markets.html" class="">Opportunity Markets</a><a href="risk-pricing.html" class="on">Risk Pricing</a></div><span class="badge">EF · Continuum</span></nav><main class="wrap">
+<h1>One number per protocol, on one scale.</h1>
+<p class="lede">Risk Pricing shows market estimates of risk across protocols, so someone sizing
+their DeFi exposure can compare those estimates instead of interpreting a single yes-or-no price in
+isolation. Every protocol is priced the same way: as a market-implied number you can set next to the
+rest of your book.</p>
+<div class="split">
+  <div class="card">
+    <div class="klab">Implied risk estimate by protocol</div>
+    <canvas id="risk" width="900" height="380"></canvas>
+    <div class="note">Lower is safer. Estimates are market-implied and refresh with the book, so
+    exposure is a live number rather than a quarterly audit.</div>
+  </div>
+  <div class="card">
+    <div class="klab">Your book</div>
+    <table>
+      <thead><tr><th>Protocol</th><th class="r">Weight</th><th class="r">Risk</th><th class="r">Contribution</th></tr></thead>
+      <tbody>
+        <tr><td>Lending</td><td class="r mono">38%</td><td class="r mono">0.21</td><td class="r mono">0.080</td></tr>
+        <tr><td>Stablecoin</td><td class="r mono">26%</td><td class="r mono">0.06</td><td class="r mono">0.016</td></tr>
+        <tr><td>Perps</td><td class="r mono">21%</td><td class="r mono">0.44</td><td class="r mono">0.092</td></tr>
+        <tr><td>DEX</td><td class="r mono">15%</td><td class="r mono">0.29</td><td class="r mono">0.044</td></tr>
+      </tbody></table>
+    <div style="margin-top:14px"><span class="badge">portfolio risk 0.232</span></div>
+    <div class="note" style="margin-top:12px">Weighted by your holdings, not by headline TVL.</div>
+  </div>
+</div>
+<div class="rail"></div><div class="rail-labels"><span>one protocol</span><span>six interfaces</span><span>one continuous line</span></div></main>
+<footer class="foot wrap"><div>Seer design study — part of the <b>Continuum</b> system: one continuous
+accent line runs through all six interfaces so the protocol reads as one ecosystem.</div>
+<div class="tag">poidh #38 submission · Risk Pricing</div></footer>
+<script src="app.js"></script><script></script></body></html>
